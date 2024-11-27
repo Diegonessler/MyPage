@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Engenheiro de Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portfólio de Engenheiro de Software</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#resume">Currículo</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Seção Sobre Mim -->
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <img src="perfil.jpg" alt="Foto Profissional">
+            <p>Sou <b>Diego Nessler</b>, estudante de Engenharia de Software e desenvolvedor front-end com experiência na criação de sites responsivos e funcionais.</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Frameworks</li>
+                <li>PHP</li>
+                <li>XAMPP</li>
+                <li>Java</li>
+            </ul>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="project-item">
+                <h3>Pagina Esporte </h3>
+                <p>"Desenvolvi a página DTTV Esportes utilizando HTML e CSS para criar um layout responsivo e atrativo, proporcionando uma experiência de usuário agradável e de fácil navegação."</p>
+                <a href="projeto1.html">Ver Projeto</a>
+            </div>
+            <div class="project-item">
+                <h3>Cadastro de Funcionario</h3>
+                <p>"Desenvolvi uma página de cadastro de funcionários utilizando PHP para integração com o banco de dados. Enfrentei dificuldades quando o banco de dados deixou de se comunicar corretamente com o site em determinado momento." </p>
+                <a href="projeto2.html">Ver Projeto</a>
+            </div>
+            <div class="project-item">
+                <h3>Lading page</h3>
+                <p>"Desenvolvi uma landing page integrada a uma página de vendas, com banco de dados para gerenciar usuários e produtos. Enfrentei desafios no gerenciamento do banco de dados, especialmente na recuperação de dados, e implementei um sistema de recuperação de senha para garantir segurança e usabilidade."</p>
+                <a href="projeto3.html">Ver Projeto</a>
+            </div>
+           
+        </section>
+
+        <!-- Seção Currículo -->
+        <section id="resume">
+            <h2>Currículo</h2>
+            <a href="DIEGO NESSLER.PDF" download>Download do Currículo</a>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact">
+            <h2>Contato</h2>
+            <form action="https://formspree.io/f/manyopje" method="POST">
+                <label for="email">Seu email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Sua mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/diego-nessler-a48aa9224/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Diegonessler" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Diego Nessler. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
