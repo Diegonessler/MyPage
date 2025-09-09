@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Estilos Globais */
 body {
     font-family: 'Roboto', sans-serif;
@@ -49,142 +48,30 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Links do GitHub */
-.project-link {
-    color: #6c63ff;
-    text-decoration: none;
+/* Botão Mostrar Mais */
+.mostrar-mais {
+    display: block; /* Garante visibilidade */
+    visibility: visible;
+    opacity: 1;
+    background-color: #6c63ff; /* Roxo principal da página */
+    color: #ffffff; /* Texto branco para contraste */
+    padding: 12px 24px; /* Espaçamento interno */
+    border-radius: 25px; /* Bordas arredondadas */
+    font-size: 1.2rem;
     font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.project-link:hover {
-    color: #5753c9;
-}
-
-/* Lista de Tecnologias */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-}
-
-/* Redes Sociais */
-.social-icons {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
-}
-
-.social-icons li a {
-    color: #b3b3b3;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-.social-icons li a:hover {
-    color: #6c63ff;
-}
-
-footer p {
-    font-size: 0.9rem;
-    color: #a3a3a3;
-}
-.social-icons {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
-}
-
-.social-icons li a {
-    color: #b3b3b3;
-    font-size: 1.8rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons li a:hover {
-    color: #6c63ff;
-    transform: scale(1.2);
-}
-/* rede social*/
-
-            .social-icons {
-                list-style: none;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-            }
-            .social-icons li {
-                display: inline;
-            }
-            .social-icons a {
-                text-decoration: none;
-                color: #333;
-                font-size: 24px;
-            }
-            .social-icons a:hover {
-                color: #0077b5; /* Mudar cor para LinkedIn e GitHub */
-            }
-            .social-icons i {
-                margin-right: 8px;
-            }
-=======
-/* Estilos Globais */
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #0e0b16;
-    color: #b3b3b3;
-    margin: 0;
-    padding: 0;
-}
-
-header, footer {
-    background: #1f1b24;
-    color: #b3b3b3;
     text-align: center;
-    padding: 1.5rem 0;
+    text-decoration: none; /* Remove sublinhado */
+    width: fit-content; /* Ajusta à largura do conteúdo */
+    margin: 20px auto; /* Centraliza o botão */
+    position: relative;
+    z-index: 10; /* Garante que não seja coberto */
+    transition: all 0.3s ease; /* Animação suave */
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Seções */
-section {
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background: rgba(31, 27, 36, 0.95);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-h1, h2 {
-    font-weight: normal;
-    color: #fff;
-}
-
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-}
-
-/* Seção sobre o projeto */
-.project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.mostrar-mais:hover {
+    background-color: #5753c9; /* Roxo mais escuro no hover */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
 }
 
 /* Links do GitHub */
@@ -219,59 +106,27 @@ ul li {
     padding: 0;
 }
 
-.social-icons li a {
-    color: #b3b3b3;
-    font-size: 1.2rem;
-    text-decoration: none;
+.social-icons li {
+    display: inline;
 }
 
-.social-icons li a:hover {
-    color: #6c63ff;
+.social-icons a {
+    color: #b3b3b3;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #6c63ff; /* Roxo para consistência com o tema */
+    transform: scale(1.2);
+}
+
+.social-icons i {
+    margin-right: 8px;
 }
 
 footer p {
     font-size: 0.9rem;
     color: #a3a3a3;
 }
-.social-icons {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
-}
-
-.social-icons li a {
-    color: #b3b3b3;
-    font-size: 1.8rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons li a:hover {
-    color: #6c63ff;
-    transform: scale(1.2);
-}
-/* rede social*/
-
-            .social-icons {
-                list-style: none;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-            }
-            .social-icons li {
-                display: inline;
-            }
-            .social-icons a {
-                text-decoration: none;
-                color: #333;
-                font-size: 24px;
-            }
-            .social-icons a:hover {
-                color: #0077b5; /* Mudar cor para LinkedIn e GitHub */
-            }
-            .social-icons i {
-                margin-right: 8px;
-            }
->>>>>>> 0e22825 (Descrição das alterações)
