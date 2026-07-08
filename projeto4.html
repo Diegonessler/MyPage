@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EchoFlow — Projeto de Diego Nessler</title>
-  <meta name="description" content="EchoFlow: aplicação de streaming de música inspirada no Spotify, com login, playlists e busca. Projeto de Diego Nessler.">
+  <title>NeoBeat-IA — Projeto de Diego Nessler</title>
+  <meta name="description" content="NeoBeat-IA: plataforma de música construída com React, TypeScript, Node.js e Supabase. Projeto de Diego Nessler.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
       <span class="chrome-dot" style="background:#ff5f57"></span>
       <span class="chrome-dot" style="background:#febc2e"></span>
       <span class="chrome-dot" style="background:#28c840"></span>
-      <span class="filename">projeto2 — echoflow.html</span>
+      <span class="filename">projeto4 — neobeat-ia.html</span>
     </div>
     <nav aria-label="Navegação do projeto" style="display:flex; align-items:center;">
       <div class="tabbar">
@@ -41,18 +41,20 @@
     <section class="project-hero">
       <div class="container">
         <div class="breadcrumb-row">
-          <a href="index.html">portfolio</a> <span>/</span> <span>projetos</span> <span>/</span> <span>echoflow</span>
+          <a href="index.html">portfolio</a> <span>/</span> <span>projetos</span> <span>/</span> <span>neobeat-ia</span>
         </div>
-        <div class="eyebrow">projeto2.js</div>
-        <h1>EchoFlow</h1>
+        <div class="eyebrow">projeto4.js</div>
+        <h1>NeoBeat-IA</h1>
         <p class="lede">
-          Aplicação inspirada no Spotify: cadastro e login com senha criptografada, busca de músicas,
-          playlists e perfis de usuário, com back-end próprio e banco de dados relacional.
+          Plataforma de música construída com React e TypeScript no front-end, com back-end em
+          Node.js e Supabase cuidando de autenticação, login de usuários e armazenamento de
+          músicas e imagens.
         </p>
         <div class="project-tags">
-          <span class="tag">HTML/CSS</span>
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
           <span class="tag">Node.js</span>
-          <span class="tag">MySQL</span>
+          <span class="tag">Supabase</span>
         </div>
       </div>
     </section>
@@ -63,9 +65,10 @@
         <div class="eyebrow">sobre.js</div>
         <h2>Sobre o projeto</h2>
         <p class="lede" style="max-width:62ch; margin-top:1rem;">
-          O EchoFlow reproduz a experiência de um player de música moderno: autenticação de usuários
-          com senha criptografada, busca de faixas, montagem de playlists e uma página de perfil
-          personalizada. O foco foi integrar front-end e back-end com persistência real de dados.
+          O NeoBeat-IA é uma aplicação de música desenvolvida com React e TypeScript no front-end,
+          com um back-end em Node.js responsável pelas regras de negócio. O Supabase é usado como
+          banco de dados e serviço de autenticação, cuidando do cadastro e login de usuários, além
+          do armazenamento de músicas e imagens da plataforma.
         </p>
       </div>
     </section>
@@ -76,45 +79,64 @@
         <div class="eyebrow">tecnologias.js</div>
         <h2>Stack utilizada</h2>
         <ul class="spec-list">
-          <li><span class="k">Frontend</span> HTML5, CSS3</li>
+          <li><span class="k">Frontend</span> React, TypeScript</li>
           <li><span class="k">Backend</span> Node.js</li>
-          <li><span class="k">Dados</span> MySQL</li>
-          <li><span class="k">Segurança</span> Senhas criptografadas</li>
+          <li><span class="k">Dados</span> Supabase</li>
+          <li><span class="k">Autenticação</span> Login de usuários via Supabase</li>
+          <li><span class="k">Armazenamento</span> Músicas e imagens via Supabase</li>
         </ul>
       </div>
     </section>
 
     <!-- GALERIA -->
     <section id="galeria">
-      <div class="container">
-        <div class="eyebrow">galeria.js</div>
-        <h2>Telas do projeto</h2>
-        <p class="lede" style="margin-top:0.5rem; margin-bottom:1.75rem;">Clique em uma imagem para ampliar.</p>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="assets/img/echoflow/pagina-busca.png" alt="Página de busca do EchoFlow" loading="lazy">
-            <div class="gallery-caption">Página de busca</div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/img/echoflow/perfil-pt1.png" alt="Página de perfil do EchoFlow, parte 1" loading="lazy">
-            <div class="gallery-caption">Perfil — parte 1</div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/img/echoflow/perfil-pt2.png" alt="Página de perfil do EchoFlow, parte 2" loading="lazy">
-            <div class="gallery-caption">Perfil — parte 2</div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/img/echoflow/play-musica.png" alt="Player tocando uma música no EchoFlow" loading="lazy">
-            <div class="gallery-caption">Tocando música</div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/img/echoflow/playlist.png" alt="Playlist criada no EchoFlow" loading="lazy">
-            <div class="gallery-caption">Playlist</div>
-          </div>
-        </div>
-        <p class="asset-note">* substitua os caminhos das imagens acima pelos arquivos reais em <code>assets/img/echoflow/</code>.</p>
+  <div class="container">
+    <div class="eyebrow">galeria.js</div>
+    <h2>Telas do projeto</h2>
+    <p class="lede" style="margin-top:0.5rem; margin-bottom:1.75rem;">
+      Clique em uma imagem para ampliar.
+    </p>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="assets/img/neobeat-ia/Configurações.png"
+             alt="Tela de configurações"
+             loading="lazy">
+        <div class="gallery-caption">Configurações</div>
       </div>
-    </section>
+
+      <div class="gallery-item">
+        <img src="assets/img/neobeat-ia/play.png"
+             alt="Tela do player"
+             loading="lazy">
+        <div class="gallery-caption">Play</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/neobeat-ia/home.png"
+             alt="Tela inicial"
+             loading="lazy">
+        <div class="gallery-caption">Home</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/neobeat-ia/login.png"
+             alt="Tela de login"
+             loading="lazy">
+        <div class="gallery-caption">Login</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/neobeat-ia/home_login.png"
+             alt="Tela Home/Login"
+             loading="lazy">
+        <div class="gallery-caption">Home_Login</div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- GITHUB -->
     <section id="github">
@@ -125,7 +147,7 @@
             <h2 style="margin-bottom:0.35rem;">Código-fonte completo</h2>
             <p style="margin:0;">Veja a estrutura do projeto, instalação e detalhes no repositório.</p>
           </div>
-          <a href="https://github.com/Diegonessler/EchoFlow_v3.0.git" target="_blank" rel="noopener" class="btn btn-primary">
+          <a href="https://github.com/Diegonessler/NeoBeat-IA.git" target="_blank" rel="noopener" class="btn btn-primary">
             <i class="fab fa-github"></i> Ver no GitHub
           </a>
         </div>

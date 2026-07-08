@@ -1,73 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ladin Page</title>
-    <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page + Loja (PHP) — Projeto de Diego Nessler</title>
+  <meta name="description" content="Landing page com sistema de vendas em PHP e MySQL, com login, cadastro de produtos e recuperação de senha. Projeto de Diego Nessler.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/projeto.css">
 </head>
 <body>
-    <header>
-        <h1>Lading Page, com aprendizado em PHP ( pagina ficticia)</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre o Projeto</a></li>
-                <li><a href="#technologies">Tecnologias</a></li>
-                <li><a href="#github">Código no GitHub</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="container">
-        <!-- Seção Sobre o Projeto -->
-        <section id="about">
-            <h2>Sobre o Projeto</h2>
-            <p>
-                Este projeto tem como objetivo desenvolver uma landing page interativa para a venda de quatro produtos, integrando um sistema de banco de dados em PHP. O sistema requer login para realizar compras, garantindo segurança e personalização para os usuários. Utilizamos as tecnologias mais modernas para garantir desempenho, escalabilidade e responsividade em todas as páginas. Durante o desenvolvimento, focamos na implementação de uma funcionalidade robusta de recuperação de senha, que ainda apresenta dificuldades de sincronização entre o site e o banco de dados. Superamos desafios de integração, segurança e responsividade para oferecer uma experiência de compra fluida e confiável.
-            </p>
-            <img src="./imagens/captura ladingpage.png" alt="Screenshot do Projeto" class="project-image">
-            <img src="./imagens/captura pgvenda.png" alt="Screenshot do Projeto" class="project-image">
-        </section>
-
-        <!-- Seção Tecnologias -->
-        <section id="technologies">
-            <h2>Tecnologias Utilizadas</h2>
-            <ul>
-                <li><strong>Frontend:</strong> HTML/CSS</li>
-                <li><strong>Backend:</strong> PHP</li>
-                <li><strong>Banco de Dados:</strong> MYSQL</li>
-                <li><strong>Outras:</strong> XAMPP/li>
-            </ul>
-        </section>
-
-        <!-- Seção Código no GitHub -->
-        <section id="github">
-            <h2>Código Fonte</h2>
-            <p>
-                O código completo do projeto pode ser encontrado no GitHub. Confira o repositório para mais detalhes sobre a estrutura do projeto, instalação e contribuições.
-            </p>
-            <a href="https://github.com/Diegonessler/projetovscode.git" target="_blank" class="project-link">Ver Código no GitHub</a>
-        </section>
-
-        <!-- Seção Contato -->
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>
-                Caso tenha alguma dúvida ou queira saber mais sobre este projeto, entre em contato comigo.
-            </p>
-            <ul class="social-icons">
-                <li><a href="https://www.linkedin.com/in/diego-nessler-a48aa9224/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Diegonessler" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-        </section>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        
-        </section>
+  <header class="editor-chrome">
+    <div class="chrome-titlebar">
+      <span class="chrome-dot" style="background:#ff5f57"></span>
+      <span class="chrome-dot" style="background:#febc2e"></span>
+      <span class="chrome-dot" style="background:#28c840"></span>
+      <span class="filename">projeto3 — loja-php.html</span>
     </div>
+    <nav aria-label="Navegação do projeto" style="display:flex; align-items:center;">
+      <div class="tabbar">
+        <a class="back-link" href="index.html#projetos"><i class="fa-solid fa-arrow-left"></i> portfolio</a>
+        <a class="tab" href="#sobre">sobre.js</a>
+        <a class="tab" href="#tecnologias">tecnologias.js</a>
+        <a class="tab" href="#galeria">galeria.js</a>
+        <a class="tab" href="#github">github.js</a>
+      </div>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
 
-    <footer>
-        <p>&copy; 2024 Diego Nessler. Todos os direitos reservados.</p>
-    </footer>
+  <main>
+    <!-- HERO -->
+    <section class="project-hero">
+      <div class="container">
+        <div class="breadcrumb-row">
+          <a href="index.html">portfolio</a> <span>/</span> <span>projetos</span> <span>/</span> <span>loja-php</span>
+        </div>
+        <div class="eyebrow">projeto3.js</div>
+        <h1>Landing Page + Loja (PHP)</h1>
+        <p class="lede">
+          Landing page fictícia integrada a um sistema de vendas com login, cadastro de produtos
+          e recuperação de senha via banco de dados.
+        </p>
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">XAMPP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <div class="container">
+        <div class="eyebrow">sobre.js</div>
+        <h2>Sobre o projeto</h2>
+        <p class="lede" style="max-width:62ch; margin-top:1rem;">
+          Este projeto simula uma loja virtual completa: uma landing page de apresentação conectada
+          a um sistema de back-end em PHP, com autenticação de usuários, cadastro de produtos e
+          fluxo de recuperação de senha, tudo persistido em um banco de dados MySQL.
+        </p>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section id="tecnologias" class="tech-section">
+      <div class="container">
+        <div class="eyebrow">tecnologias.js</div>
+        <h2>Stack utilizada</h2>
+        <ul class="spec-list">
+          <li><span class="k">Backend</span> PHP</li>
+          <li><span class="k">Dados</span> MySQL</li>
+          <li><span class="k">Ambiente</span> XAMPP</li>
+          <li><span class="k">Funcionalidades</span> Login, cadastro de produtos, recuperação de senha</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria">
+      <div class="container">
+        <div class="eyebrow">galeria.js</div>
+        <h2>Prévia do projeto</h2>
+        <div class="gallery-grid" style="margin-top:1.75rem;">
+          <div class="gallery-item">
+            <img src="assets/img/landing-home.png" alt="Landing page de vendas do projeto em PHP" loading="lazy">
+            <div class="gallery-caption">Landing page — página inicial da loja</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section id="github">
+      <div class="container">
+        <div class="eyebrow">github.js</div>
+        <div class="resume-card github-card">
+          <div>
+            <h2 style="margin-bottom:0.35rem;">Código-fonte completo</h2>
+            <p style="margin:0;">Veja a estrutura do projeto, instalação e detalhes no repositório.</p>
+          </div>
+          <a href="https://github.com/Diegonessler/projetovscode.git" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fab fa-github"></i> Ver no GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="container">
+        <div class="eyebrow">contato.js</div>
+        <h2>Dúvidas sobre este projeto?</h2>
+        <p class="lede" style="margin-top:0.75rem;">Entre em contato comigo pelas redes abaixo.</p>
+        <div class="social-row" style="margin-top:1.5rem;">
+          <a href="https://www.linkedin.com/in/diego-nessler-a48aa9224/" target="_blank" rel="noopener" aria-label="LinkedIn de Diego Nessler">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Diegonessler" target="_blank" rel="noopener" aria-label="GitHub de Diego Nessler">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; <span data-year></span> Diego Nessler. Construído com HTML, CSS e JavaScript puros.
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,74 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 1 - Descrição</title>
-    <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Carla Figueiredo — Projeto de Diego Nessler</title>
+  <meta name="description" content="Loja virtual desenvolvida com React, Node.js e Supabase, no ar em carlafigueiredo.shop. Projeto de Diego Nessler.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/projeto.css">
 </head>
 <body>
-    <header>
-        <h1>Projeto 1: Descrição Completa</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre o Projeto</a></li>
-                <li><a href="#technologies">Tecnologias</a></li>
-                <li><a href="#github">Código no GitHub</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="container">
-        <!-- Seção Sobre o Projeto -->
-        <section id="about">
-            <h2>Sobre o Projeto</h2>
-            <p>
-                Este projeto foi criado em sala de aula com minha equipe cujos nomes são <b>Natan </b> e <b>Silvio</b>, Projeto criado com base de aprendizagem em HTML E css.
-            </p>
-             <div class="image-container">
-            <img src="./imagens/projeto1.png" alt="Imagem Aumenta ao Passar o Mouse" class="project-image">
-        </section>
-
-
-        <!-- Seção Tecnologias -->
-        <section id="technologies">
-            <h2>Tecnologias Utilizadas</h2>
-            <ul>
-                <li><strong>Frontend:</strong> HTM</li>
-                <li><strong>Backend:</strong> JAVA SCRIPT </Script></li>
-                <li><strong>Banco de Dados:</strong> MSQL</li>
-                <li><strong>Outras:</strong> XAMPP</li>
-            </ul>
-        </section>
-
-        <!-- Seção Código no GitHub -->
-        <section id="github">
-            <h2>Código Fonte</h2>
-            <p>
-                O código completo do projeto pode ser encontrado no GitHub. Confira o repositório para mais detalhes sobre a estrutura do projeto, instalação e contribuições.
-            </p>
-            <a href="https://github.com/Diegonessler/DTTV.git" target="_blank" class="project-link">Ver Código no GitHub</a>
-        </section>
-
-        <!-- Seção Contato -->
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>
-                Caso tenha alguma dúvida ou queira saber mais sobre este projeto, entre em contato comigo.
-            </p>
-            <ul class="social-icons">
-                <li><a href="https://www.linkedin.com/in/diego-nessler-a48aa9224/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Diegonessler" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-        </section>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        
+  <header class="editor-chrome">
+    <div class="chrome-titlebar">
+      <span class="chrome-dot" style="background:#ff5f57"></span>
+      <span class="chrome-dot" style="background:#febc2e"></span>
+      <span class="chrome-dot" style="background:#28c840"></span>
+      <span class="filename">projeto1 — ecommerce-carlafigueiredo.html</span>
     </div>
+    <nav aria-label="Navegação do projeto" style="display:flex; align-items:center;">
+      <div class="tabbar">
+        <a class="back-link" href="index.html#projetos"><i class="fa-solid fa-arrow-left"></i> portfolio</a>
+        <a class="tab" href="#sobre">sobre.js</a>
+        <a class="tab" href="#tecnologias">tecnologias.js</a>
+        <a class="tab" href="#galeria">galeria.js</a>
+        <a class="tab" href="#github">links.js</a>
+      </div>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
 
-    <footer>
-        <p>&copy; 2024 Diego Nessler. Todos os direitos reservados.</p>
-    </footer>
+  <main>
+    <!-- HERO -->
+    <section class="project-hero">
+      <div class="container">
+        <div class="breadcrumb-row">
+          <a href="index.html">portfolio</a> <span>/</span> <span>projetos</span> <span>/</span> <span>ecommerce-carlafigueiredo</span>
+        </div>
+        <div class="eyebrow">projeto1.js</div>
+        <h1>E-commerce Carla Figueiredo</h1>
+        <p class="lede">
+          Loja virtual completa, desenvolvida do zero com React no front-end, Node.js no back-end
+          e Supabase como banco de dados e autenticação. O projeto foi publicado com domínio
+          próprio e está no ar.
+        </p>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Supabase</span>
+        </div>
+        <a class="status-badge" href="https://www.carlafigueiredo.shop" target="_blank" rel="noopener">
+          <span class="status-dot"></span> site no ar — carlafigueiredo.shop
+        </a>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <div class="container">
+        <div class="eyebrow">sobre.js</div>
+        <h2>Sobre o projeto</h2>
+        <p class="lede" style="max-width:62ch; margin-top:1rem;">
+          Este foi um projeto real de e-commerce, levado até a publicação: além de construir a
+          loja com catálogo de produtos, carrinho e autenticação de usuários, cuidei também da
+          configuração de domínio e do deploy para deixar o site acessível publicamente em
+          <strong style="color:#fff;">carlafigueiredo.shop</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section id="tecnologias" class="tech-section">
+      <div class="container">
+        <div class="eyebrow">tecnologias.js</div>
+        <h2>Stack utilizada</h2>
+        <ul class="spec-list">
+          <li><span class="k">Frontend</span> React</li>
+          <li><span class="k">Backend</span> Node.js</li>
+          <li><span class="k">Dados</span> Supabase (banco de dados e autenticação)</li>
+          <li><span class="k">Deploy</span> Domínio próprio, site em produção</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria">
+      <div class="container">
+        <div class="eyebrow">galeria.js</div>
+        <h2>Prévia do projeto</h2>
+        <div class="gallery-grid" style="margin-top:1.75rem;">
+          <div class="gallery-item">
+            <img src="assets/img/ecommerce/ecommerce-carlafigueiredo.png" alt="Tela inicial da loja virtual Carla Figueiredo" loading="lazy">
+            <div class="gallery-caption">Página inicial da loja</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS -->
+    <section id="github">
+      <div class="container">
+        <div class="eyebrow">links.js</div>
+        <div class="resume-card github-card two-links">
+          <div>
+            <h2 style="margin-bottom:0.35rem;">Veja o projeto</h2>
+            <p style="margin:0;">Confira o site no ar ou o código-fonte completo no repositório.</p>
+          </div>
+          <div class="link-row">
+            <a href="https://www.carlafigueiredo.shop" target="_blank" rel="noopener" class="btn btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver site
+            </a>
+            <a href="https://github.com/Diegonessler/E-commerce_CarlaFigueiredo.git" target="_blank" rel="noopener" class="btn btn-ghost">
+              <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="container">
+        <div class="eyebrow">contato.js</div>
+        <h2>Dúvidas sobre este projeto?</h2>
+        <p class="lede" style="margin-top:0.75rem;">Entre em contato comigo pelas redes abaixo.</p>
+        <div class="social-row" style="margin-top:1.5rem;">
+          <a href="https://www.linkedin.com/in/diego-nessler-a48aa9224/" target="_blank" rel="noopener" aria-label="LinkedIn de Diego Nessler">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Diegonessler" target="_blank" rel="noopener" aria-label="GitHub de Diego Nessler">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; <span data-year></span> Diego Nessler. Construído com HTML, CSS e JavaScript puros.
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
-

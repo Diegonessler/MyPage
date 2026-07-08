@@ -1,95 +1,248 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+  <html lang="pt-BR">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Engenheiro de Software</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Portfólio de Engenheiro de Software</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#resume">Currículo</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+    <title>Diego Nessler — Desenvolvedor Front-end</title>
+    <meta name="description" content="Portfólio de Diego Nessler, estudante de Engenharia de Software e desenvolvedor front-end. Projetos em HTML, CSS, JavaScript, PHP e Java.">
+    <meta property="og:title" content="Diego Nessler — Desenvolvedor Front-end">
+    <meta property="og:description" content="Portfólio com projetos de desenvolvimento web: HTML, CSS, JavaScript, PHP e Java.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <header class="editor-chrome">
+      <div class="chrome-titlebar">
+        <span class="chrome-dot" style="background:#ff5f57"></span>
+        <span class="chrome-dot" style="background:#febc2e"></span>
+        <span class="chrome-dot" style="background:#28c840"></span>
+        <span class="filename">diego-nessler — portfolio</span>
+      </div>
+      <nav aria-label="Navegação principal" style="display:flex; align-items:center;">
+        <div class="tabbar">
+          <a class="tab active" href="#sobre">sobre.js</a>
+          <a class="tab" href="#projetos">projetos.js</a>
+          <a class="tab" href="#curriculo">curriculo.pdf</a>
+          <a class="tab" href="#contato">contato.js<span class="dot-unsaved"></span></a>
+        </div>
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
     </header>
 
-    <div class="container">
-        <!-- Seção Sobre Mim -->
-        <section id="about">
-            <h2>Sobre Mim</h2>
-            <img src="./imagens/perfil.jpg" alt="Foto Profissional">
-            <p> Olá! Sou <b>Diego Nessler</b>, estudante de Engenharia de Software e desenvolvedor front-end apaixonado por criar experiências digitais modernas, responsivas e funcionais.  
-  Tenho experiência no desenvolvimento de interfaces web intuitivas e estou em busca de uma oportunidade para aplicar minhas habilidades, contribuir com projetos inovadores e crescer junto com a equipe.
-</p>
+    <main>
+      <!-- HERO -->
+      <section class="hero" style="border-bottom:1px solid var(--line); padding-top: 4rem;">
+        <div class="container hero-grid">
+          <div>
+            <div class="terminal">
+              <span class="prompt">$</span> Nome<br>
+              <span class="name" data-typing="diego-nessler"></span><span class="cursor">&nbsp;</span>
+            </div>
+            <h1>Desenvolvedor <span class="role">Front-end</span> &amp; estudante de Engenharia de Software</h1>
+            <p class="lede">
+              Construo interfaces web responsivas e funcionais, do primeiro <code>&lt;div&gt;</code>
+              até a integração com banco de dados. Atualmente buscando minha primeira oportunidade
+              para crescer junto de um time de produto.
+            </p>
+            <div class="btn-row">
+              <a href="#projetos" class="btn btn-primary"><i class="fa-solid fa-code"></i> Ver projetos</a>
+              <a href="assets/docs/diego-nessler-cv.pdf" class="btn btn-ghost" download>
+                <i class="fa-solid fa-download"></i> Baixar currículo
+              </a>
+            </div>
+          </div>
 
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Frameworks</li>
-                <li>PHP</li>
-                <li>XAMPP</li>
-                <li>Java</li>
-            </ul>
-        </section>
+          <div class="code-card">
+            <div class="cc-head">
+              <span class="chrome-dot" style="background:#ff5f57"></span>
+              <span class="chrome-dot" style="background:#febc2e"></span>
+              <span class="chrome-dot" style="background:#28c840"></span>
+            </div>
+            <pre><span class="tok-com">// stack atual</span>
+  <span class="tok-key">const</span> dev <span class="tok-punc">=</span> {
+    nome<span class="tok-punc">:</span> <span class="tok-str">'Diego Nessler'</span>,
+    foco<span class="tok-punc">:</span> <span class="tok-str">'front-end'</span>,
+    stack<span class="tok-punc">:</span> [<span class="tok-str">'HTML'</span>, <span class="tok-str">'CSS'</span>, <span class="tok-str">'JavaScript'</span>,
+            <span class="tok-str">'PHP'</span>, <span class="tok-str">'Java'</span>, <span class="tok-str">'MySQL'</span>],
+    aprendendo<span class="tok-punc">:</span> <span class="tok-str">'boas práticas de UI'</span>,
+    <span class="tok-fn">disponivel</span><span class="tok-punc">()</span> {
+      <span class="tok-key">return</span> <span class="tok-str">true</span>;
+    }
+  };</pre>
+          </div>
+        </div>
+      </section>
 
-        <!-- Seção Projetos -->
-        <section id="projects">
+      <!-- SOBRE -->
+      <section id="sobre">
+        <div class="container about-grid">
+          <img class="avatar" src="assets/img/perfil.jpg" alt="Foto de perfil de Diego Nessler">
+          <div>
+            <div class="eyebrow">sobre.js</div>
+            <h2>Quem escreveu esse código</h2>
+            <p>
+              Sou <strong style="color:#fff;">Diego Nessler</strong>, estudante de Engenharia de Software e
+              desenvolvedor front-end apaixonado por transformar ideias em interfaces web modernas,
+              responsivas e funcionais. Tenho experiência construindo telas do zero e estou em busca
+              de uma oportunidade para aplicar o que aprendi em projetos reais, contribuir com um time
+              e continuar evoluindo como desenvolvedor.
+            </p>
+
+            <div class="skills-block">
+              <div class="eyebrow">skills.json</div>
+              <ul class="spec-list">
+                <li><span class="k">Frontend</span> HTML, CSS, JavaScript, typeScript,React</li>
+                <li><span class="k">Backend</span> PHP, Java, Node.js </li>
+                <li><span class="k">Dados</span> MySQL, XAMPP, PHP</li>
+                <li><span class="k">Ferramentas</span> Git, GitHub, VS Code</li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">projetos.js</div>
             <h2>Projetos</h2>
-            <div class="project-item">
-                <h3>Pagina Esporte </h3>
-                <p>"Desenvolvi a página DTTV Esportes utilizando HTML e CSS para criar um layout responsivo e atrativo, proporcionando uma experiência de usuário agradável e de fácil navegação."</p>
-                <a href="projeto1.html">Ver Projeto</a>
-            </div>
-            <div class="project-item">
+            <p>Trabalhos acadêmicos e pessoais construídos para praticar front-end, back-end e integração com banco de dados.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets/img/ecommerce/ecommerce-carlafigueiredo.png" alt="Tela inicial do site DTTV Esportes" loading="lazy">
+              </div>
+              <div class="project-body">
+                <h3>Ecommerce Carla Figueiredo</h3>
+                <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+                <p>Loja virtual completa, desenvolvida do zero com React no front-end, Node.js no back-end
+          e Supabase como banco de dados e autenticação. O projeto foi publicado com domínio
+          próprio e está no ar.</p>
+                <div class="project-links">
+                  <a href="projeto1.html">Ver detalhes →</a>
+                  <a href="https://github.com/Diegonessler/DTTV.git" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets/img/echoflow-player.png" alt="Tela de player de música do projeto EchoFlow" loading="lazy">
+              </div>
+              <div class="project-body">
                 <h3>EchoFlow</h3>
-                <p>"Desenvolvi uma página no estilo Spotify, com foco em playlists, busca de músicas e perfil de usuários. Durante o desenvolvimento, trabalhei na organização das telas e na navegação entre as páginas, superando desafios para garantir uma experiência fluida e intuitiva." </p>
-                <a href="projeto2.html">Ver Projeto</a>
+                <div class="project-tags"><span class="tag">HTML/CSS</span><span class="tag">Node.js</span><span class="tag">MySQL</span></div>
+                <p>Aplicação inspirada no Spotify: cadastro e login com senha criptografada, busca de músicas, playlists e perfis de usuário.</p>
+                <div class="project-links">
+                  <a href="projeto2.html">Ver detalhes →</a>
+                  <a href="https://github.com/Diegonessler/EchoFlow_v3.0.git" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets/img/landing-home.png" alt="Landing page de vendas do projeto em PHP" loading="lazy">
+              </div>
+              <div class="project-body">
+                <h3>Landing Page + Loja (PHP)</h3>
+                <div class="project-tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">XAMPP</span></div>
+                <p>Landing page fictícia integrada a um sistema de vendas com login, cadastro de produtos e recuperação de senha via banco de dados.</p>
+                <div class="project-links">
+                  <a href="projeto3.html">Ver detalhes →</a>
+                  <a href="https://github.com/Diegonessler/projetovscode.git" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets/img/neobeat-ia/Home.png" alt="Tela do projeto NeoBeat-IA" loading="lazy">
+              </div>
+              <div class="project-body">
+                <h3>NeoBeat-IA</h3>
+                <div class="project-tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Supabase</span></div>
+                <p>Plataforma de música construída com React e TypeScript no front-end, Node.js no back-end e Supabase para autenticação, login de usuários e armazenamento de músicas e imagens.</p>
+                <div class="project-links">
+                  <a href="projeto4.html">Ver detalhes →</a>
+                  <a href="https://github.com/Diegonessler/NeoBeat-IA.git" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURRÍCULO -->
+      <section id="curriculo">
+        <div class="container">
+          <div class="eyebrow">curriculo.pdf</div>
+          <div class="resume-card">
+            <div>
+              <h2 style="margin-bottom:0.35rem;">Quer ver tudo em um PDF?</h2>
+              <p style="margin:0;">Formação, cursos e experiências em um único documento.</p>
             </div>
-            <div class="project-item">
-                <h3>Lading page</h3>
-                <p>"Desenvolvi uma landing page integrada a uma página de vendas, com banco de dados para gerenciar usuários e produtos. Enfrentei desafios no gerenciamento do banco de dados, especialmente na recuperação de dados, e implementei um sistema de recuperação de senha para garantir segurança e usabilidade."</p>
-                <a href="projeto3.html">Ver Projeto</a>
-            </div>
-           
-        </section>
+            <a href="assets/docs/diego-nessler-cv.pdf" class="btn btn-primary" download>
+              <i class="fa-solid fa-file-arrow-down"></i> Baixar currículo
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Seção Currículo -->
-        <section id="resume">
-            <h2>Currículo</h2>
-            <a href="DIEGO NESSLER.PDF" download>Download do Currículo</a>
-        </section>
+      <!-- CONTATO -->
+      <section id="contato">
+        <div class="container contact-grid">
+          <div>
+            <div class="eyebrow">contato.js</div>
+            <h2>Vamos conversar</h2>
+            <p>Aberto a oportunidades de estágio e primeiro emprego como desenvolvedor front-end back-end e fullstack. Me manda uma mensagem.</p>
 
-        <!-- Seção Contato -->
-        <section id="contact">
-            <h2>Contato</h2>
-            <form action="https://formspree.io/f/manyopje" method="POST">
-                <label for="email">Seu email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Sua mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Enviar</button>
+            <form id="contact-form" action="https://formspree.io/f/manyopje" method="POST">
+              <div class="field">
+                <label for="email">Seu email</label>
+                <input type="email" id="email" name="email" required placeholder="voce@email.com">
+              </div>
+              <div class="field">
+                <label for="message">Sua mensagem</label>
+                <textarea id="message" name="message" required placeholder="Conte um pouco sobre a oportunidade ou o que você achou do site :)"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Enviar mensagem</button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
             </form>
-            <ul class="social-icons">
-                <li><a href="https://www.linkedin.com/in/diego-nessler-a48aa9224/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Diegonessler" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-        </section>
-    </div>
+          </div>
+
+          <div class="contact-side">
+            <p class="tok-com">// outras formas de contato</p>
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/diego-nessler-a48aa9224/" target="_blank" rel="noopener" aria-label="LinkedIn de Diego Nessler">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/Diegonessler" target="_blank" rel="noopener" aria-label="GitHub de Diego Nessler">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Diego Nessler. Todos os direitos reservados.</p>
+      <div class="container">
+        &copy; <span data-year></span> Diego Nessler. Construído com HTML, CSS e JavaScript puros.
+      </div>
     </footer>
-</body>
-</html>
 
-
-
+    <script src="assets/js/script.js"></script>
+  </body>
+  </html>

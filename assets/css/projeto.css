@@ -1,0 +1,123 @@
+/* =========================================================
+   Diego Nessler — Páginas de detalhe de projeto
+   Extensão do tema "editor de código" (usa as variáveis de style.css)
+   ========================================================= */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  padding: 0.9rem 1.15rem;
+  border-right: 1px solid var(--line-soft);
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.back-link:hover { color: var(--blue); background: rgba(255,255,255,0.02); }
+
+/* ---------- Hero do projeto ---------- */
+.project-hero { padding-top: 4.5rem; padding-bottom: 3.5rem; }
+.project-hero h1 { margin-top: 0.5rem; }
+.project-hero .lede { margin-top: 1rem; }
+.project-hero .project-tags { margin-top: 1.5rem; }
+
+.breadcrumb-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}
+.breadcrumb-row a { color: var(--blue); }
+.breadcrumb-row a:hover { color: var(--cyan); }
+
+/* ---------- Equipe ---------- */
+.team-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; }
+.team-chip {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text);
+  background: var(--bg-inset);
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+}
+.team-chip .role-tag { color: var(--yellow); }
+
+/* ---------- Galeria ---------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.gallery-item {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.gallery-item:hover { transform: translateY(-4px); border-color: var(--blue); box-shadow: var(--shadow); }
+.gallery-item img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform 0.35s ease; }
+.gallery-item:hover img { transform: scale(1.06); }
+.gallery-caption {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  padding: 0.65rem 0.9rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+/* ---------- Lightbox / modal ---------- */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(10, 11, 18, 0.92);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.75rem;
+  width: 42px; height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  color: var(--text);
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+.lightbox-close:hover { color: var(--pink); border-color: var(--pink); }
+
+/* ---------- Bloco de tecnologias (reaproveita .spec-list) ---------- */
+.tech-section .spec-list { margin-top: 1.5rem; max-width: 46ch; }
+
+/* ---------- CTA GitHub (reaproveita .resume-card) ---------- */
+.github-card i { font-size: 1.4rem; }
+
+/* ---------- Nota de imagens pendentes ---------- */
+.asset-note {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  margin-top: 0.75rem;
+}
